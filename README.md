@@ -30,6 +30,10 @@ npm run preview
 `npm run build` runs the Vue/TypeScript project check and creates the production
 bundle in `dist/`.
 
+The Vercel deployment uses `vercel.json` to serve the SPA entry point for
+direct requests to client-side routes. Vue Router then redirects unknown paths
+to the home page.
+
 ## Project structure
 
 ```text
