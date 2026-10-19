@@ -1,0 +1,19 @@
+.typing-title {
+  display: inline;
+}
+
+.typing-title__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.82em;
+  margin-left: 0.08em;
+  background: currentColor;
+  vertical-align: -0.02em;
+  animation: cursor-blink 850ms step-end infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
