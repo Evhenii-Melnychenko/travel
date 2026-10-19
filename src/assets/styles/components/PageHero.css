@@ -6,13 +6,13 @@
   overflow: hidden;
   padding: 5rem var(--page-gutter) 5.5rem;
   color: #fffefa;
-  background-color: #526457;
+  background-color: #29271f;
 }
 
 .page-hero::before {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgb(23 39 31 / 74%), rgb(26 41 34 / 34%) 72%, rgb(30 44 36 / 10%));
+  background: linear-gradient(90deg, rgb(24 23 18 / 76%), rgb(29 28 21 / 38%) 72%, rgb(34 33 26 / 12%));
   content: '';
 }
 
@@ -41,7 +41,7 @@
 }
 
 .page-hero__content .eyebrow {
-  color: #d8e0d4;
+  color: var(--color-primary-soft);
 }
 
 .page-hero__title {
@@ -49,7 +49,7 @@
   min-height: 2.1em;
   margin: 1.2rem 0 1rem;
   font-family: var(--font-display);
-  font-size: clamp(3.1rem, 7vw, 6.5rem);
+  font-size: var(--font-size-display-page);
   font-weight: 400;
   letter-spacing: -0.06em;
   line-height: 1.02;
@@ -59,7 +59,7 @@
   max-width: 530px;
   margin: 0;
   color: rgb(255 254 250 / 83%);
-  font-size: 0.98rem;
+  font-size: var(--font-size-base);
   line-height: 1.8;
 }
 
@@ -82,12 +82,12 @@
 
   .page-hero__title {
     min-height: 2.35em;
-    font-size: clamp(3rem, 13vw, 5rem);
+    font-size: var(--font-size-display-page);
   }
 
   .page-hero__decoration {
     right: 1.3rem;
     bottom: 1.3rem;
-    font-size: 4.5rem;
+    font-size: clamp(4rem, 14vw, 4.5rem);
   }
 }

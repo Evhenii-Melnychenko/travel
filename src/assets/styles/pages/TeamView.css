@@ -14,14 +14,14 @@
 .team__intro-mark {
   color: var(--color-accent);
   font-family: var(--font-display);
-  font-size: 5rem;
+  font-size: clamp(4rem, 3rem + 3vw, 5rem);
   line-height: 0.75;
 }
 
 .team__intro p {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-size: var(--font-size-display-sm);
   letter-spacing: -0.035em;
   line-height: 1.25;
 }
@@ -67,9 +67,9 @@
   height: 2.7rem;
   place-items: center;
   border-radius: 50%;
-  color: #24372c;
-  background: #fffefa;
-  font-size: 0.7rem;
+  color: #24241f;
+  background: var(--color-primary);
+  font-size: var(--font-size-2xs);
 }
 
 .team-card__info {
@@ -83,7 +83,7 @@
 .team-card__info h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: -0.035em;
 }
@@ -91,14 +91,14 @@
 .team-card__role {
   margin: 0.2rem 0 0;
   color: var(--color-forest);
-  font-size: 0.69rem;
+  font-size: var(--font-size-2xs);
 }
 
 .team-card__bio {
   max-width: 230px;
   margin: 0.2rem 0 0;
-  color: var(--color-muted);
-  font-size: 0.75rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-xs);
 }
 
 .team-values {
@@ -108,8 +108,8 @@
   align-items: center;
   overflow: hidden;
   padding: 5rem var(--page-gutter);
-  color: #fffefa;
-  background: var(--color-forest-deep);
+  color: #24241f;
+  background: var(--color-primary);
 }
 
 .team-values__content {
@@ -119,13 +119,13 @@
 }
 
 .team-values__content .eyebrow {
-  color: #c9d5c9;
+  color: #5a4a12;
 }
 
 .team-values__content h2 {
   margin: 1.2rem 0;
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  font-size: clamp(2.8rem, 1.5rem + 4vw, 5rem);
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1.05;
@@ -134,15 +134,15 @@
 .team-values__content > p:last-child {
   max-width: 550px;
   margin: 0;
-  color: rgb(255 254 250 / 76%);
-  font-size: 0.9rem;
+  color: rgb(36 36 31 / 76%);
+  font-size: var(--font-size-sm);
 }
 
 .team-values__shape {
   position: absolute;
   right: 8%;
-  color: rgb(255 254 250 / 6%);
-  font-size: clamp(18rem, 40vw, 36rem);
+  color: rgb(36 36 31 / 7%);
+  font-size: var(--font-size-decoration);
   line-height: 1;
 }
 
@@ -154,7 +154,7 @@
   }
 
   .team__intro-mark {
-    font-size: 3.2rem;
+    font-size: clamp(2.8rem, 10vw, 3.2rem);
   }
 
   .team-card:nth-child(even) {

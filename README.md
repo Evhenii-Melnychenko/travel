@@ -4,6 +4,10 @@ A responsive tourism SPA built with Vue 3, TypeScript, Vue Router, Pinia and
 Vue I18n. The interface is available in English and Polish, with persistent
 language and light/dark theme preferences.
 
+## Demo
+
+[Demo link](https://travel-murex-seven.vercel.app/)
+
 ## Requirements
 
 - Node.js `^22.18.0` or `>=24.12.0`
@@ -115,6 +119,15 @@ Vue components and views include their stylesheets with `<style src="...">`.
 Class names follow BEM. Put new global styles in `base.css` or `app.css` only
 when they are genuinely shared; otherwise add them to the matching component or
 page stylesheet.
+
+The visual palette uses `#FFD11A` as the primary accent with charcoal and warm
+neutral surfaces. Both light and dark themes are defined as CSS custom
+properties in `base.css`; use these tokens rather than adding page-specific
+brand colors.
+
+Typography uses fluid `clamp()`-based CSS custom properties in `base.css`, so
+body copy, labels and headings scale smoothly between viewport sizes. Reuse
+the existing `--font-size-*` tokens for new text styles.
 
 Local AVIF images are stored in `src/assets/images/pages/` and imported into
 Vue/TypeScript modules so Vite can resolve and fingerprint them for production.

@@ -12,8 +12,8 @@
 
 .catalog__count {
   margin: 0;
-  color: var(--color-muted);
-  font-size: 0.8rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-sm);
 }
 
 .filter {
@@ -26,9 +26,9 @@
   padding: 0.6rem 1rem;
   border: 1px solid var(--color-line);
   border-radius: 2rem;
-  color: var(--color-muted);
+  color: var(--color-ink);
   background: transparent;
-  font-size: 0.72rem;
+  font-size: var(--font-size-xs);
   cursor: pointer;
   transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
@@ -56,8 +56,8 @@
   margin: 4rem 0 0;
   padding-top: 1.4rem;
   border-top: 1px solid var(--color-line);
-  color: var(--color-muted);
-  font-size: 0.83rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-sm);
 }
 
 @media (max-width: 620px) {
@@ -73,7 +73,7 @@
 
   .filter__button {
     padding: 0.52rem 0.8rem;
-    font-size: 0.67rem;
+    font-size: var(--font-size-2xs);
   }
 
   .tour-grid--catalog {

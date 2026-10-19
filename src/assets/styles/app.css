@@ -11,17 +11,13 @@
 }
 
 .section-pad {
-  padding: clamp(4.5rem, 9vw, 8.5rem) var(--page-gutter);
-}
-
-.section-pad--top {
-  padding-top: 0;
+  padding: clamp(3rem, 9vw, 5rem) var(--page-gutter);
 }
 
 .eyebrow {
   margin: 0;
-  color: var(--color-forest);
-  font-size: 0.65rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-2xs);
   font-weight: 700;
   letter-spacing: 0.19em;
   line-height: 1.5;
@@ -32,7 +28,7 @@
   max-width: 760px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5.6vw, 5.3rem);
+  font-size: var(--font-size-display-md);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 1.04;
@@ -41,7 +37,7 @@
 .section-title--small {
   max-width: 550px;
   margin-top: 1rem;
-  font-size: clamp(2.1rem, 4vw, 3.8rem);
+  font-size: var(--font-size-display-section);
 }
 
 .text-link {
@@ -51,7 +47,7 @@
   padding-bottom: 0.38rem;
   border-bottom: 1px solid var(--color-forest);
   color: var(--color-forest-deep);
-  font-size: 0.84rem;
+  font-size: var(--font-size-sm);
   font-weight: 600;
   transition: gap 180ms ease, color 180ms ease;
 }
@@ -69,7 +65,7 @@
   gap: 1.5rem;
   padding: 0.85rem 1.4rem;
   border: 1px solid transparent;
-  font-size: 0.83rem;
+  font-size: var(--font-size-sm);
   font-weight: 600;
   transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
@@ -79,23 +75,22 @@
 }
 
 .button--light {
-  color: #203a2e;
-  background: #fffefa;
+  color: #24241f;
+  background: var(--color-primary);
 }
 
 .button--light:hover {
-  color: #fffefa;
-  background: transparent;
-  border-color: rgb(255 254 250 / 75%);
+  color: #24241f;
+  background: var(--color-primary-hover);
 }
 
 .button--dark {
-  color: #fffefa;
-  background: var(--color-forest);
+  color: #24241f;
+  background: var(--color-primary);
 }
 
 .button--dark:hover {
-  background: var(--color-forest-deep);
+  background: var(--color-primary-hover);
 }
 
 .reveal {

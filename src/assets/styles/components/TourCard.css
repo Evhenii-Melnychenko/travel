@@ -32,9 +32,9 @@
   position: absolute;
   top: 1rem;
   padding: 0.45rem 0.72rem;
-  color: #25362c;
-  background: #fffefa;
-  font-size: 0.62rem;
+  color: #24241f;
+  background: var(--color-primary);
+  font-size: var(--font-size-2xs);
   font-weight: 600;
 }
 
@@ -52,8 +52,8 @@
 
 .tour-card__location {
   margin: 0 0 0.45rem;
-  color: var(--color-muted);
-  font-size: 0.69rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-2xs);
 }
 
 .tour-card__location span {
@@ -63,7 +63,7 @@
 .tour-card__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: var(--font-size-xl);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.2;
@@ -72,8 +72,8 @@
 .tour-card__description {
   min-height: 3em;
   margin: 0.6rem 0 1.25rem;
-  color: var(--color-muted);
-  font-size: 0.82rem;
+  color: var(--color-ink);
+  font-size: var(--font-size-xs);
   line-height: 1.7;
 }
 
@@ -84,7 +84,7 @@
   padding-top: 0.8rem;
   border-top: 1px solid var(--color-line);
   color: var(--color-forest-deep);
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   font-weight: 600;
 }
 
